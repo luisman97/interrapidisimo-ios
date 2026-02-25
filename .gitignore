@@ -1,0 +1,161 @@
+# ============================================================
+#  .gitignore para proyecto iOS — Febrero 2026
+#  Xcode 16+, Swift 6+, SwiftPM, CocoaPods, Tuist, Fastlane
+# ============================================================
+
+
+# ──────────────────────────────────────────
+#  XCODE
+# ──────────────────────────────────────────
+
+# Datos de usuario (específicos por desarrollador)
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+
+# Playground caches
+playground.xcworkspace
+
+# Archivos temporales de Xcode
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# Datos de previsualización (SwiftUI)
+**/*~ .nib
+
+# ──────────────────────────────────────────
+#  BUILD & DERIVEDDATA
+# ──────────────────────────────────────────
+
+build/
+DerivedData/
+*.build/
+*.hmap
+*.ipa
+*.xcarchive
+*.dSYM.zip
+*.dSYM/
+
+# ──────────────────────────────────────────
+#  SWIFT PACKAGE MANAGER
+# ──────────────────────────────────────────
+
+.build/
+.swiftpm/xcode/
+# Mantener Package.resolved en control de versiones
+# para reproducibilidad de builds (recomendado).
+# Si prefieres ignorarlo, descomenta la siguiente línea:
+# Package.resolved
+
+# ──────────────────────────────────────────
+#  COCOAPODS
+# ──────────────────────────────────────────
+
+Pods/
+# Mantener Podfile.lock en VCS (reproduce builds exactos).
+# Si no usas Pods, puedes ignorar estas líneas.
+
+# ──────────────────────────────────────────
+#  CARTHAGE
+# ──────────────────────────────────────────
+
+Carthage/Build/
+
+# ──────────────────────────────────────────
+#  TUIST
+# ──────────────────────────────────────────
+
+*.xcodeproj
+!**/xcshareddata/xcschemes/*.xcscheme
+Derived/
+Tuist/.build/
+
+# ──────────────────────────────────────────
+#  FASTLANE
+# ──────────────────────────────────────────
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output/
+fastlane/logs/
+
+# ──────────────────────────────────────────
+#  CERTIFICATES & SECRETS  ⚠️ IMPORTANTE
+# ──────────────────────────────────────────
+
+*.p12
+*.cer
+*.certSigningRequest
+*.mobileprovision
+*.provisionprofile
+AuthKey_*.p8          # App Store Connect API keys
+GoogleService-Info.plist
+Secrets.swift
+Secrets.xcconfig
+*.env
+.env.*
+secrets/
+credentials/
+private_keys/
+
+# ──────────────────────────────────────────
+#  TESTING
+# ──────────────────────────────────────────
+
+*.xcresult
+
+# ──────────────────────────────────────────
+#  macOS RUIDO
+# ──────────────────────────────────────────
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+
+# ──────────────────────────────────────────
+#  HERRAMIENTAS DE CALIDAD DE CÓDIGO
+# ──────────────────────────────────────────
+
+# SwiftLint
+.swiftlint.yml.bak
+
+# Periphery
+.periphery/
+
+# ──────────────────────────────────────────
+#  IDEs ALTERNATIVOS
+# ──────────────────────────────────────────
+
+# VSCode / Cursor
+.vscode/
+.cursor/
+
+# JetBrains (AppCode, Fleet)
+.idea/
+*.iml
+
+# ──────────────────────────────────────────
+#  OTROS
+# ──────────────────────────────────────────
+
+# Archivos de backup de editores
+*~
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Archivos de localización compilados
+*.lproj/*.stringsdict.bak
