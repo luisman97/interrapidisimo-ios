@@ -11,7 +11,9 @@ import SwiftUI
 struct Interrapidisimo_iOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            VersionCheckFactory.getVersionCheckView {
+                Text("Home")
+            }
         }
     }
 }
