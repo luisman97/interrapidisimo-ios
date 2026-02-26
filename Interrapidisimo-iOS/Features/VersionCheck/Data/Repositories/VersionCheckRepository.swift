@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class VersionCheckRepository: VersionCheckRepositoryProtocol {
+struct VersionCheckRepository: VersionCheckRepositoryProtocol {
     private let httpClient: HTTPClientProtocol
 
     init(httpClient: HTTPClientProtocol) {
@@ -15,9 +15,6 @@ final class VersionCheckRepository: VersionCheckRepositoryProtocol {
     }
 
     func fetchRemoteVersion() async throws -> String {
-        try await httpClient.get(
-            .versionCheck,
-            as: String.self
-        )
+        try await httpClient.request(service: .remoteVersion)
     }
 }

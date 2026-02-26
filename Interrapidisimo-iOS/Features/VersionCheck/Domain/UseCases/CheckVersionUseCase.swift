@@ -11,7 +11,7 @@ protocol CheckVersionUseCaseProtocol {
     func execute() async throws -> VersionStatus
 }
 
-final class CheckVersionUseCase: CheckVersionUseCaseProtocol {
+struct CheckVersionUseCase: CheckVersionUseCaseProtocol {
     private let repository: VersionCheckRepositoryProtocol
 
     init(repository: VersionCheckRepositoryProtocol) {

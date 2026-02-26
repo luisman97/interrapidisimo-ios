@@ -6,8 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		61C9E0842F4FBC44002AE4C7 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 61C9E0832F4FBC44002AE4C7 /* GRDB */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61C9E0E02F4FE329002AE4C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61C9DE2D2F4F6B6A002AE4C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61C9DE342F4F6B6A002AE4C7;
+			remoteInfo = "Interrapidisimo-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		61C9DE352F4F6B6A002AE4C7 /* Interrapidisimo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Interrapidisimo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61C9E0DC2F4FE329002AE4C7 /* Interrapidisimo-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Interrapidisimo-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +31,23 @@
 			path = "Interrapidisimo-iOS";
 			sourceTree = "<group>";
 		};
+		61C9E0DD2F4FE329002AE4C7 /* Interrapidisimo-iOSTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Interrapidisimo-iOSTests";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		61C9DE322F4F6B6A002AE4C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61C9E0842F4FBC44002AE4C7 /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C9E0D92F4FE329002AE4C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				61C9DE372F4F6B6A002AE4C7 /* Interrapidisimo-iOS */,
+				61C9E0DD2F4FE329002AE4C7 /* Interrapidisimo-iOSTests */,
 				61C9DE362F4F6B6A002AE4C7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				61C9DE352F4F6B6A002AE4C7 /* Interrapidisimo-iOS.app */,
+				61C9E0DC2F4FE329002AE4C7 /* Interrapidisimo-iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,10 +95,34 @@
 			);
 			name = "Interrapidisimo-iOS";
 			packageProductDependencies = (
+				61C9E0832F4FBC44002AE4C7 /* GRDB */,
 			);
 			productName = "Interrapidisimo-iOS";
 			productReference = 61C9DE352F4F6B6A002AE4C7 /* Interrapidisimo-iOS.app */;
 			productType = "com.apple.product-type.application";
+		};
+		61C9E0DB2F4FE329002AE4C7 /* Interrapidisimo-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61C9E0E22F4FE329002AE4C7 /* Build configuration list for PBXNativeTarget "Interrapidisimo-iOSTests" */;
+			buildPhases = (
+				61C9E0D82F4FE329002AE4C7 /* Sources */,
+				61C9E0D92F4FE329002AE4C7 /* Frameworks */,
+				61C9E0DA2F4FE329002AE4C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61C9E0E12F4FE329002AE4C7 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				61C9E0DD2F4FE329002AE4C7 /* Interrapidisimo-iOSTests */,
+			);
+			name = "Interrapidisimo-iOSTests";
+			packageProductDependencies = (
+			);
+			productName = "Interrapidisimo-iOSTests";
+			productReference = 61C9E0DC2F4FE329002AE4C7 /* Interrapidisimo-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,6 +137,10 @@
 					61C9DE342F4F6B6A002AE4C7 = {
 						CreatedOnToolsVersion = 26.2;
 					};
+					61C9E0DB2F4FE329002AE4C7 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 61C9DE342F4F6B6A002AE4C7;
+					};
 				};
 			};
 			buildConfigurationList = 61C9DE302F4F6B6A002AE4C7 /* Build configuration list for PBXProject "Interrapidisimo-iOS" */;
@@ -94,18 +152,29 @@
 			);
 			mainGroup = 61C9DE2C2F4F6B6A002AE4C7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				61C9E0822F4FBC44002AE4C7 /* XCRemoteSwiftPackageReference "GRDB" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 61C9DE362F4F6B6A002AE4C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				61C9DE342F4F6B6A002AE4C7 /* Interrapidisimo-iOS */,
+				61C9E0DB2F4FE329002AE4C7 /* Interrapidisimo-iOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		61C9DE332F4F6B6A002AE4C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61C9E0DA2F4FE329002AE4C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +191,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		61C9E0D82F4FE329002AE4C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61C9E0E12F4FE329002AE4C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61C9DE342F4F6B6A002AE4C7 /* Interrapidisimo-iOS */;
+			targetProxy = 61C9E0E02F4FE329002AE4C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		61C9DE3E2F4F6B6A002AE4C7 /* Debug */ = {
@@ -310,6 +394,48 @@
 			};
 			name = Release;
 		};
+		61C9E0E32F4FE329002AE4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y5LAGSY8W8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.desayscod.Interrapidisimo-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Interrapidisimo-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Interrapidisimo-iOS";
+			};
+			name = Debug;
+		};
+		61C9E0E42F4FE329002AE4C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y5LAGSY8W8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.desayscod.Interrapidisimo-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Interrapidisimo-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Interrapidisimo-iOS";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,7 +457,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		61C9E0E22F4FE329002AE4C7 /* Build configuration list for PBXNativeTarget "Interrapidisimo-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61C9E0E32F4FE329002AE4C7 /* Debug */,
+				61C9E0E42F4FE329002AE4C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		61C9E0822F4FBC44002AE4C7 /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		61C9E0832F4FBC44002AE4C7 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61C9E0822F4FBC44002AE4C7 /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 61C9DE2D2F4F6B6A002AE4C7 /* Project object */;
 }

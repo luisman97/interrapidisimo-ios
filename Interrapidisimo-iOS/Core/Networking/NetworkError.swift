@@ -15,6 +15,20 @@ enum NetworkError: LocalizedError {
     case nonHTTP
     case invalidResponse
 
+    /// A localized description of the network error.
+    ///
+    /// This property provides user-facing error messages for different network failure scenarios.
+    /// Each case returns a localized string that describes the specific error condition.
+    ///
+    /// - Returns: A localized string describing the error, or `nil` if no description is available.
+    ///
+    /// The possible error descriptions include:
+    /// - `.general`: A general error with the underlying error's localized description
+    /// - `.status`: An HTTP status code error with the specific code
+    /// - `.json`: A JSON parsing error with the underlying error's localized description
+    /// - `.dataNotValid`: An error indicating invalid data was received from the server
+    /// - `.nonHTTP`: An error indicating the response was not an HTTP response
+    /// - `.invalidResponse`: An error indicating the response contains no usable data
     var errorDescription: String? {
         switch self {
         case .general(let error): String(localized: "General: \(error.localizedDescription)")
